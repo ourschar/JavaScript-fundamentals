@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>6. Conditional Logic in JavaScript</title>
+  <script type="text/javascript">
+  
+  var someValue = 24;
+  var otherValue = 23;
+
+  /*
+  if (someValue > 30) {
+    alert("first case"); 
+  }
+  else if (someValue === 30) {
+    alert("second case");
+  }
+
+  else if (someValue ===26) { //<--this doesn't execute/alert because the condition was already satisfied above in the 2nd situation, so it stops and breaks out of the 'if' structure.
+    alert("third case");
+  }
+
+  else {    <--don't put the variable name in (). 
+    alert("fourth case");
+  }
+  
+  if (someValue > 20 && otherValue > 20) { // && means "and" where both HAVE to be true for it to apply.
+    alert("fifth case");
+  }
+
+  if (someValue ===24 || otherValue ===24) { // || means "or" where either one has to be true for it to apply.
+    alert("sixth case");
+  }
+
+  if (someValue !== 24) {   !== means NOT equal to 24, then execute the alert. 
+    alert ("seventh case");
+  }
+
+  if (!someValue) {   ! means "if NOT someValue, meaning if someValue is False"
+    alert ("eigth case");
+  }
+ 
+  var myResult = "";
+  myResult = (someValue === 24) ? "equal" : "not equal";
+  alert(myResult);
+
+   var userName = "Rimmer";
+   switch (userName)
+   {
+      case "Lister":
+        document.write("Care for a good curry?");
+        break;
+      case "Rimmer":
+        document.write("Welcome back, smeg head");
+         break;
+      default:
+        document.write("Are you an emohawk?");
+        break;
+   }
+     */
+
+     var rightNow = new Date();
+     var currentHour = rightNow.getHours();
+     switch(true)
+     {
+        case (currentHour > 8 && currentHour < 12):
+          document.write("Morning, sunshine!");
+          break;
+        case (currentHour === 12):
+          document.write("Lunch time!");
+          break;
+        case (currentHour > 12 && currentHour < 18):
+          document.write("Fight the urge to sleep!");
+          break;
+        default:
+          document.write("Careful, they'll think you're a hard worker");
+          break;
+     }
+
+
+
+  </script>
+</head>
+<body>
+  <h1>6. Conditional Logic in JavaScript</h1>
+</body>
+</html>
