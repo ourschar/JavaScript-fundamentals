@@ -3,13 +3,72 @@
 <head>
   <title>7. JavaScript Functions</title>
   <script type="text/javascript">
-
+  /*
     function myNewFunction() {
-      
+    	alert("Howdy!"); 
     }
+    myNewFunction();
+  
+   function myNewFunction(myValue) {
+    alert("Howdy, " + myValue);
+   }
+   myNewFunction("pardner");
+  
+
+   function addIt(firstNumber, secondNumber) {
+   	return firstNumber + secondNumber;
+   }
+   var myResult = addIt(1, 2);
+   alert(myResult);
+    
+
+
+    function addIt() {
+      var tempValue = 0;
+      for (i = 0; i < arguments.length; i++)
+      {
+          tempValue += arguments[i];               <-----He totally lost me in this example. No clue what's happening or why.
+      }
+      return tempValue;
+     }
+     var myValue = addIt(1,2,3,4,5);
+     alert(myValue);
+    
+
+
+      var addMe = function() {     // This is called a Function literal. 
+        return arguments[0] + arguments[1];
+      }
+
+      var myNewValue = addMe(1,2);
+      alert(myNewValue);
+   
+
+      var myResult = (function() {
+        return arguments[0] + arguments[1];      <---this was an Anonymous function before I added var myResult to it (??I think). It was function() {}
+      }) (1,2);
+      alert(myResult);
+         */
+
+      alert((function() {
+        return arguments[0] + arguments[1]; // <--- I think this is a bunch of stuff combined into less steps?
+      }) (1,3));
+
+
+
+
+
+
+
+
+
+
+
+
   </script>
 </head>
 <body>
   <h1>7. JavaScript Functions</h1>
+  <input type="submit" value="Click me" onclick="myNewFunction();" />
 </body>
 </html>
