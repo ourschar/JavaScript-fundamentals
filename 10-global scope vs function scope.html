@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>10. Global Scope versus Function Scope</title>
+  <script type="text/javascript">
+    
+    /*if (true) {
+      var x = 5;
+    }
+    alert(x);
+    
+
+    myScope = "global";     <----myScope works inside & outside the function because there's no "var". It's global.
+
+    (function() {
+      alert('inside the function, the scope is: ' + myScope);
+    })();
+    alert('outside the function, the scope is ' + myScope);
+    
+
+
+    (function() {               // <--- myScope only works inside the function because it's not defined outside the function.
+      var myScope = "function";
+      alert('inside the function, the scope is: ' + myScope);
+    })();
+    alert('outside the function, the scope is ' + myScope);
+     
+
+
+      myScope = "global";     <---- the function variable inside (myScope) takes precedence over the global outside. 
+
+      (function() {             
+      var myScope = "function";
+      alert('inside the function, the scope is: ' + myScope);
+    })();
+    alert('outside the function, the scope is ' + myScope);
+
+
+      myScope = "global";   // <--- you can rewrite a global variable inside the function too. It works inside AND outside then, since you rewrote it & it reads both.
+
+      (function() {             
+      myScope = "I set this inside the function";
+      alert('inside the function, the scope is: ' + myScope);
+    })();
+    alert('outside the function, the scope is ' + myScope);
+  
+    
+     (function() {  
+       if (true)                 // <--- "hoisting"??? It ignores black of code and hoists any variables to the top of the function. It shows "function." 
+       {
+        var myScope = "function";
+       }
+      alert('inside the function, the scope is: ' + myScope);
+    })();
+       */
+
+       myScope = "global";
+
+       alert('window.myScope: ' + window.myScope);
+    
+
+
+
+  </script>
+</head>
+<body>
+  <h1>10. Global Scope versus Function Scope</h1>
+</body>
+</html>
