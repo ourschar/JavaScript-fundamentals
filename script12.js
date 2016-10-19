@@ -66,13 +66,13 @@ if (typeof planet.defense === "undefined") {  //adding a new property to the old
 document.write(planet.defense);
 */
 
-/*
-for (member in planet) {         ?????????????????????
+
+for (member in planet) {         
   document.write("<br/>" + member + " ==> " + planet[member]);
 }
-*/
 
-function car (myMake, myModel, myYear) {   //defining a constructor & inside defining properties of an object (ex:make) by the same name as the constructor.
+
+/*function car (myMake, myModel, myYear) {   //defining a constructor & inside defining properties of an object (ex:make) by the same name as the constructor.
   this.make = myMake;
   this.model = myModel;
   this.year = myYear;
@@ -83,7 +83,7 @@ var myOtherCar = new car("Dodge", "Dart", 1971);
 
 alert(myCar.model);
 alert(myOtherCar.model);
-
+*/
 
 
 
